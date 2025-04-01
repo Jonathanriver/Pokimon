@@ -15,12 +15,7 @@ function Registrar() {
         direccion
     ]
 
-    console.log(array);
-
-    let texto = document.getElementById("texto");
-    let text_apellido = document.getElementById("text-apellido");
-    texto.textContent = array[0];
-    text_apellido.textContent = array[1];
-
-    // location.href = "../index.html";
+    localStorage.setItem("user", JSON.stringify(array));
+    alert("Usuario registrado correctamente")
+    window.location.href = "../vistas/Entrenador.html"
 }
